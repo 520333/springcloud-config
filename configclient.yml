@@ -5,26 +5,26 @@ spring:
 spring:
   application:
     name: springcloud-provider-dept
-server:
-  port: 8201
-spring:
   config:
     activate:
       on-profile: dev
+server:
+  port: 8201
+
 eureka:
-  client: 
+  client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
 ---
 spring:
   application:
     name: springcloud-provider-dept
-server:
-  port: 8202
-spring:
   config:
     activate:
       on-profile: test
+server:
+  port: 8202
+
 eureka:
   client:
     service-url:
